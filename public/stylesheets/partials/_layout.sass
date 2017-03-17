@@ -1,0 +1,22 @@
+// breakpoints
+
+$S: 40.0rem
+$M: 80.0rem
+$L: 120.0rem
+
+// media queries
+
+=MQ($canvas)
+  @if $canvas == S
+    @media only screen and (min-width: $S)
+      @content
+  @else if $canvas == M
+    @media only screen and (min-width: $M)
+      @content
+  @else if $canvas == L
+    @media only screen and (min-width: $L)
+      @content
+
+=column($percentage, $float-direction:left)
+  width: 100% * $percentage
+  float: $float-direction
