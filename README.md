@@ -1,7 +1,7 @@
 # bitcoin-template
 Simple skeleton for a SPA
 
-#Install
+# Install
 ## Full Install
 Running in Terminal, `npm run full-install`, will install the following
 - **Gems**
