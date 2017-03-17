@@ -20,6 +20,6 @@ Run in Terminal, `npm run install-packages`
 # To Run
 Run in Terminal, `npm start`
 
-###Troubleshooting
+### Troubleshooting
 - Cannot install Sass or Bourbon due to Permisisons
 --> Run the following command `sudo npm run install-gems`.
