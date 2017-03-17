@@ -10,6 +10,9 @@ Running in Terminal, `npm run full-install`, will install the following
 - **Bower Dependencies**
 - **NPM Dependencies**
 - **Bourbon Files**
+### Troubleshooting
+- Cannot install Sass or Bourbon due to Permisisons
+--> Run the following command `sudo npm run install-gems`.
 
 ## Install Gems
 Run in Terminal, `npm run install-gems`
@@ -19,7 +22,3 @@ Run in Terminal, `npm run install-packages`
 
 # To Run
 Run in Terminal, `npm start`
-
-### Troubleshooting
-- Cannot install Sass or Bourbon due to Permisisons
---> Run the following command `sudo npm run install-gems`.
