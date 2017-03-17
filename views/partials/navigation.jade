@@ -1,0 +1,60 @@
+header.main-header
+
+    .burger-wrapper
+        a.signin(href='#1') Sign in
+        a.nav-mobile-trigger
+            span.menu-text
+            span.menu-icon
+    .logo
+        a(href='/')
+            img(src='/images/logo.svg' width='70px')
+
+    nav#nav-main
+        ul
+            li.signin
+                a(href='#1') Sign in
+            li.signup
+                a(href='#0') Sign up
+            li#stats
+                a.subnav-trigger Stats
+                ul.submenu
+                    li.go-back
+                        a Menu
+                    li
+                        a Data here
+                    li
+                        a Data here
+            li#elements
+                a.subnav-trigger Elements
+                ul.submenu
+                  li
+                    a(href='/elements/') All
+                  li
+                    a(href='/elements/forms') Forms
+
+nav#nav-main-mobile
+    ul.nav-mobile-wrapper
+        figure.stats
+            li.label Stats
+            span.stats-title Site Bankroll:
+                a.stats-value $ 15733.01232 BTC
+        figure.elements
+            li.label Elements
+            a(href='/elements') All
+            a(href='/elements/forms') Forms
+        figure.preferences
+            li.label Site Preferences
+            // Language
+            figure.language
+                a
+                    span.flag-icon.flag-icon-ca
+                    span.language-3   EN
+            // Currency
+            figure.currency
+                a
+                    span.currency-symbol $
+                    span.currency-title   CAD
+    a.signup(href='#0') Sign up
+    
+//- Signup/Signin Modal
+include signInUp-modal

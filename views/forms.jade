@@ -1,0 +1,40 @@
+extends layout
+extends index
+
+block section
+  section.content
+    h2 Forms
+    form.form-a
+      fieldset.account
+        legend Account Info
+        
+        .error-message
+          p Please Fix your email
+        
+        label.label(for='username') User name
+        input.user.error(type='text', name='username', id='username' required)
+    
+      //- Bank Transfer Form
+      fieldset.bank-transfer
+        legend Bank Transfer
+        div
+          p.subtitle Transfer funds between my own accounts.
+          
+          h4 From
+          p.select
+            select.bank-account
+              option( value='0' selected disabled) Select Account
+              option.title( value='1' disabled) 001 - Coinbase
+              option( value='1,1') β 37.571240
+              option.title( value='2' disabled) 002 - Xapo
+              option( value='2,1') β 89.834275
+          h4 To
+          p.select
+            select.bank-account
+              option( value='0' selected disabled) Select Account
+              option.title( value='1' disabled) 001 - Coinbase
+              option( value='1,1') β 37.571240
+              option.title( value='2' disabled) 002 - Xapo
+              option( value='2,1') β 89.834275
+        div
+          input(type="submit", value="Send")
