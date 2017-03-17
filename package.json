@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "install-gems": "sudo gem i sass bourbon",
+    "install-gems": "gem i sass bourbon",
     "install-packages": "npm i && bower i && bourbon i",
     "full-install": "npm run install-gems && npm run install-packages"
   },
